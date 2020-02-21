@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace jwwisniewski\Jigsaw\News\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
@@ -59,7 +59,7 @@ class NewsController extends Controller
     {
         $instances = [];
 
-        return view('news.edit', compact('news', 'instances'));
+        return view('jigsaw-news::edit', compact('news', 'instances'));
     }
 
     public function update(UpdateNews $request, News $news)

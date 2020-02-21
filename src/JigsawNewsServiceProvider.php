@@ -3,6 +3,7 @@
 namespace jwwisniewski\Jigsaw\News;
 
 use Illuminate\Support\ServiceProvider;
+use jwwisniewski\Jigsaw\Core\Jigsaw;
 
 class JigsawNewsServiceProvider extends ServiceProvider
 {
@@ -19,11 +20,13 @@ class JigsawNewsServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(Jigsaw $jigsaw)
     {
         $this->loadRoutesFrom(__DIR__.'/../resources/routes/routes.php');
         $this->loadMigrationsFrom(__DIR__.'/../resources/migrations');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'jigsaw-news');
+
+        $jigsaw->registerModule(News::class);
     }
 
     /**
