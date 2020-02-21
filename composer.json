@@ -1,0 +1,28 @@
+{
+  "name": "jwwisniewski/jigsaw-news",
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "jwwisniewski\\Jigsaw\\News\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "jwwisniewski\\Jigsaw\\Subpage\\JigsawNewsServiceProvider"
+      ]
+    }
+  },
+  "repositories": [{
+    "type": "vcs",
+    "url": "https://github.com/jwwisniewski/jigsaw-core"
+  }],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "jwwisniewski/jigsaw-core": "dev-master",
+    "laravelcollective/html": "^6.0"
+  }
+}
