@@ -4,7 +4,7 @@ namespace jwwisniewski\Jigsaw\News;
 
 use Illuminate\Support\ServiceProvider;
 
-class JigsawSubageServiceProvider extends ServiceProvider
+class JigsawNewsServiceProvider extends ServiceProvider
 {
 
     /**

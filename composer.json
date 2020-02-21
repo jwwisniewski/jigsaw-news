@@ -11,7 +11,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "jwwisniewski\\Jigsaw\\Subpage\\JigsawNewsServiceProvider"
+        "jwwisniewski\\Jigsaw\\News\\JigsawNewsServiceProvider"
       ]
     }
   },
