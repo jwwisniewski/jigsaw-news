@@ -8,8 +8,8 @@
     edit news
 </h1>
 
-@include('jigsaw-core::errors')
-@include('jigsaw-core::editLang')
+@include('jigsaw-core::common.errors')
+@include('jigsaw-core::common.editLang')
 
 {!! Form::model($news, ['route' => ['news.update', $news->id]]) !!}
 

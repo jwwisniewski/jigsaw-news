@@ -14,7 +14,7 @@ class StoreNews extends FormRequest
     public function rules()
     {
         return [
-//            'instance_id' => 'required|integer',
+            'instance_id' => 'required|integer',
             'title' => 'required|min:3',
             'url' => 'nullable|min:3',
             'keywords' => 'nullable|min:3',

@@ -9,8 +9,8 @@
     create news
 </h1>
 
-@include('jigsaw-core::errors')
-@include('jigsaw-core::editLang', ['disabled' => true])
+@include('jigsaw-core::common.errors')
+@include('jigsaw-core::common.editLang', ['disabled' => true])
 
 {!! Form::open(['route' => ['news.store']]) !!}
 
