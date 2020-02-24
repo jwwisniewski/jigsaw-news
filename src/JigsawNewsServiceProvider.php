@@ -4,6 +4,7 @@ namespace jwwisniewski\Jigsaw\News;
 
 use Illuminate\Support\ServiceProvider;
 use jwwisniewski\Jigsaw\Core\Jigsaw;
+use jwwisniewski\Jigsaw\Core\Module;
 
 class JigsawNewsServiceProvider extends ServiceProvider
 {
@@ -25,8 +26,9 @@ class JigsawNewsServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/../resources/routes/routes.php');
         $this->loadMigrationsFrom(__DIR__.'/../resources/migrations');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'jigsaw-news');
+        $this->loadTranslationsFrom(__DIR__.'/../resources/translations', 'jigsaw-news');
 
-        $jigsaw->registerModule(News::class);
+        $jigsaw->registerModule(News::class, 'news', 'news.index', true, Module::INSTANTIABLE);
     }
 
     /**

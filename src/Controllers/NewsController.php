@@ -27,7 +27,7 @@ class NewsController extends Controller
 
     public function create(Jigsaw $jigsaw)
     {
-        $instances = [];
+        $instances = $jigsaw->getRunnableInstances(News::class);
 
         return view('jigsaw-news::create', compact('instances'));
     }
@@ -55,9 +55,9 @@ class NewsController extends Controller
         ]);
     }
 
-    public function edit(News $news)
+    public function edit(News $news, Jigsaw $jigsaw)
     {
-        $instances = [];
+        $instances = $jigsaw->getRunnableInstances(News::class);
 
         return view('jigsaw-news::edit', compact('news', 'instances'));
     }

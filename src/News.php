@@ -4,6 +4,7 @@ namespace jwwisniewski\Jigsaw\News;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use jwwisniewski\Jigsaw\Core\Instance;
 use jwwisniewski\Jigsaw\Core\Traits\MultiLangSupport;
 
 class News extends Model
