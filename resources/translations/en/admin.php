@@ -1,5 +1,5 @@
 <?php
 
 return [
-        'module-title' => 'News'
+    'module-title' => 'News',
 ];
