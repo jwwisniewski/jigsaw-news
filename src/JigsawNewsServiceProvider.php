@@ -8,7 +8,6 @@ use jwwisniewski\Jigsaw\Core\Module;
 
 class JigsawNewsServiceProvider extends ServiceProvider
 {
-
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -48,5 +47,4 @@ class JigsawNewsServiceProvider extends ServiceProvider
     public function provides()
     {
     }
-
 }
