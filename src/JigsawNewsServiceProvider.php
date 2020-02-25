@@ -27,7 +27,7 @@ class JigsawNewsServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'jigsaw-news');
         $this->loadTranslationsFrom(__DIR__.'/../resources/translations', 'jigsaw-news');
 
-        $jigsaw->registerModule(News::class, 'news', 'news.index', true, Module::INSTANTIABLE);
+        $jigsaw->registerModule(News::class, 'news', 'news.index', Module::INSTANTIABLE);
     }
 
     /**
